@@ -1,8 +1,7 @@
 """
-poetry add requests
+requestsのリトライありのサンプル
 """
 
-import requests
 from requests import Response, Session
 from requests.exceptions import RequestException, Timeout
 from requests.adapters import HTTPAdapter
@@ -10,15 +9,7 @@ from urllib3.util.retry import Retry
 from typing import Dict
 
 
-def request():
-    response: Response = requests.get('http://quotes.toscrape.com/')
-
-    print(f'response.status_code: {response.status_code}')
-    print(f'response.headers: {response.headers}')
-    print(f'response.text: {response.text}')
-
-
-def request_with_retry():
+def main():
     with Session() as session:
         url: str = 'http://quotes.toscrape.com/'
         headers: Dict[str, str] = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36', 'Accept': '*/*'}  # noqa
@@ -41,5 +32,4 @@ def request_with_retry():
 
 
 if __name__ == "__main__":
-    request()
-    request_with_retry()
+    main()
