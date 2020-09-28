@@ -28,9 +28,9 @@ async def extract_html() -> str:
         # Username・Passwordを入力
         await page.type('#username', 'hoge')
         await page.type('#password', 'fuga')
-        login_btn: ElementHandle = await page.querySelector('form input.btn')
 
         # Loginボタンクリック
+        login_btn: ElementHandle = await page.querySelector('form input.btn')
         results: List[Any] = await asyncio.gather(login_btn.click(), page.waitForNavigation())
         if results[1].status != 200:
             raise RuntimeError(f'site is not available. status: {response.status}')
