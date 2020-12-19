@@ -166,8 +166,8 @@ category = "main"
 description = "Common interface for data container classes"
 name = "itemadapter"
 optional = false
-python-versions = "*"
-version = "0.1.0"
+python-versions = ">=3.6"
+version = "0.1.1"
 
 [[package]]
 category = "main"
@@ -656,8 +656,8 @@ incremental = [
     {file = "incremental-17.5.0.tar.gz", hash = "sha256:7b751696aaf36eebfab537e458929e194460051ccad279c72b755a167eebd4b3"},
 ]
 itemadapter = [
-    {file = "itemadapter-0.1.0-py3-none-any.whl", hash = "sha256:de3f6f567446122a48d496c10b5d830d7909f2399bc7ad51d61163c57967f480"},
-    {file = "itemadapter-0.1.0.tar.gz", hash = "sha256:52159b4f97d82aa2968000ee8371b2114af56a2f44e4cd9142580d46eea39020"},
+    {file = "itemadapter-0.1.1-py3-none-any.whl", hash = "sha256:896986897b1a2d9e1eb0cc5f6c2e834177adae577a3ba81694e7bb3ee6359bd5"},
+    {file = "itemadapter-0.1.1.tar.gz", hash = "sha256:b5e75d48c769ee5c89de12aeba537b2d62d7b575cd549d5d430ed8a67faa63f2"},
 ]
 itemloaders = [
     {file = "itemloaders-1.0.3-py3-none-any.whl", hash = "sha256:d8f92a93d0cc9f5a7f72f01562539cb7030f7741758e764a0a8716f9b0210f7a"},
