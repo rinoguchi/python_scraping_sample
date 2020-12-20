@@ -2,5 +2,5 @@
 .vscode
 **/__pycache__
 **/**/*.html
-src/puppeteer/downloads
+src/**/downloads
 **/node_modules

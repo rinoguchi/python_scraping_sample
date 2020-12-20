@@ -11,6 +11,7 @@ beautifulsoup4 = "^4.9.1"
 pyppeteer = "^0.2.2"
 requests-html = "^0.10.0"
 scrapy = "^2.2.0"
+pyppdf = "^0.1.2"
 
 [tool.poetry.dev-dependencies]
 
